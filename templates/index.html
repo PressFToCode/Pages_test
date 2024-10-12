@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайные факты о котах</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Случайные факты о котах</h1>
+        <div id="fact-container">
+            <p id="fact"> </p>
+            <img id="cat-image" src="" alt="Кот" style="display:none;">
+            <div class="loader" id="loader"></div>
+        </div>
+        <button id="get-fact-button">Новый факт</button>
+    </div>
+    
+</body>
+</html>
